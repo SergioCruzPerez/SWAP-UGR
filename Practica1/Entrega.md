@@ -3,7 +3,7 @@
 Primero conectamos ambas máquinas internamente mediante la red **solo-anfitrión** llamada vboxnet0.
 Primero lo haríamos con la **máquina 1(SWAP 1)** y luego con la **máquina 2 (SWAP 2)**.
 
-![Captura de pantalla](~/SWAP-UGR/Practica1/fotos/a.png)
+![Captura de pantalla](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/a.png)
 ![Captura de pantalla](~/SWAP-UGR/Practica1/fotos/b.png)
 ~~~
 
