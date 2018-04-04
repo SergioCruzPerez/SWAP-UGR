@@ -1,6 +1,6 @@
 # Práctica 1
 
-Primero conectamos ambas máquinas internamente mediante la red **solo-anfitrión** llamada vboxnet0.
+Primero conectamos ambas máquinas internamente mediante la red **solo-anfitrión** llamada vboxnet0. s
 Primero lo haríamos con la **máquina 1(SWAP 1)** y luego con la **máquina 2 (SWAP 2)**.
 
 ![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/a.png)
