@@ -1,4 +1,4 @@
-#Práctica 1
+# Práctica 1
 ~~~
 Primero conectamos ambas máquinas internamente mediante la red **solo-anfitrión** llamada vboxnet0.
 Primero lo haríamos con la **máquina 1(SWAP 1)** y luego con la **máquina 2 (SWAP 2)**.
@@ -32,3 +32,4 @@ Por último demostramos que es posible acceder mediante la herramienta curl desd
 Probamos a ejecutar hola.html en **SWAP1** desde **SWAP2** y la captura muestra el correcto funcionamiento.
 A la inversa también es posible.
 ~~~
+ 
