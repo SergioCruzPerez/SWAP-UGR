@@ -6,7 +6,7 @@ Primero lo haríamos con la **máquina 1(SWAP 1)** y luego con la **máquina 2 (
 ![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/a.png)
 ![Captura de pantalla](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/b.png)
 
-
+Para que ambas máquinas detecten la **vboxnet0** creada, hay que
 
 Una vez realizado lo anterior al ejecutar el comando **ifconfig**,veremos claramente como ya ambas máquinas detectan **vboxnet0** creada.
 ![Captura de pantalla](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/c.png)
