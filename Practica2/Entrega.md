@@ -43,6 +43,7 @@ al final de la orden ssh seguida de la ip de la máquina a la cual deseamos cone
 Teniendo preparado el acceso por **ssh sin contraseña**, podemos hacer uso del *rsync* desde scripts que se ejecuten automáticamente con el cron.
 
 **Programar tareas con crontab**
+
 Establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas.
 Lo que vamos a hacer es mantener actualizado el contenido de /var/www/ en la máquina 2 con respecto a máquina 1.
 Bastara con acceder al fichero /etc/crontab de la máquina 2 y añadir la siguiente línea.
