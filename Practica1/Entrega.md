@@ -28,13 +28,11 @@ Aquí mostramos que podemos acceder con **ssh** desde SWAP1 (*192.168.1.50*) a S
 
 
 Por último demostramos que es posible acceder mediante la herramienta curl desde una máquina a la otra
-![Captura de pantalla](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/f.png)
-
-
-
 
 
 Probamos a ejecutar hola.html en **SWAP1** desde **SWAP2** y la captura muestra el correcto funcionamiento.
 A la inversa también es posible.
+
+![Captura de pantalla](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica1/fotos/f.png)
 
  
