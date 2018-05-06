@@ -18,7 +18,7 @@ Por otro lado, un honeypot puede ser tan complejo como una completa red de orden
 
 Otra opción muy utilizada es crear honeypots completamente virtuales: programas específicamente diseñados para simular una red, engañar al atacante con direcciones falsas, IP fingidas y ordenadores inexistentes, con el único fin de confundirlo o alimentar el ataque para analizar nuevos métodos. Si algo tienen en común los honeypots es que no guardan ninguna información relevante, y si lo parece, si se muestran contraseñas o datos de usuario, son completamente ficticios. 
 
-![img](honeynet.png)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Trabajos/Fotos/honeynet.jpeg)
 
 Los honeypots son clasificados según diferentes categorías:  
 
@@ -34,7 +34,7 @@ En este sentido, los honeypots se usan para mitigar los riesgos de las compañí
 
 Como toda herramienta destinada  a mejorar la seguridad, los honeypots tienen sus ventajas e inconvenientes.  Su mayor utilidad radica en su simpleza. Al ser un mecanismo cuyo único fin consiste en que intenten aprovechar sus debilidades, no realiza ningún servicio real, y el tráfico que transita a través de él va a ser muy pequeño. Si se detecta tráfico que va o viene hacia el sistema, casi con toda probabilidad va a ser una prueba, escaneo o ataque. El tráfico registrado en un sistema de este tipo es sospechoso por naturaleza, por lo que su gestión y estudio se simplifica en gran medida. Aunque, por supuesto, ocurran “falsos positivos”, expresión que, en este caso, invierte su significado. Si un falso positivo se produce normalmente cuando una actividad sospechosa tomada como ataque no resulta serlo, en el ambiente de los honeypots, el falso positivo sería el tráfico gestionado por la máquina que no representa una amenaza. En esta simpleza de uso de tráfico y recursos, radica su mayor ventaja. En resumen, poca información, pero muy valiosa. 
 
-![img](esquema.png)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Trabajos/Fotos/esquema.png)
 
 Entre los problemas que se pueden producir por el trabajo con honeypots, destaca la posibilidad de que se vuelva en contra del administrador. Si no se diseña de una manera absolutamente estudiada, si no se ata cada cabo, si no se aísla convenientemente, el atacante puede acabar comprometiendo un sistema real y llegar a datos valiosos conectados al honeypot.
 
@@ -62,7 +62,7 @@ Tras este concepto surgen los honeymonkeys. Su función principal, al igual que 
 
 Fue Microsoft quien los bautizó. “Monkey” (mono, en inglés) hace alusión a los saltos y el dinamismo del tipo de acción que realizan. Con este método, al igual que los honeypots, se pueden encontrar nuevos exploits, gusanos, etc., siempre que se analice y procese convenientemente toda la información recogida. 
 
-![img](esquema2.png)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Trabajos/Fotos/esquema2.jpeg)
 
 ## Honeypots y honeynets
 
@@ -103,7 +103,7 @@ Existen pocas herramientas comerciales que cubran este mercado de honeypots, sin
 
 Uno de los Honeypots comerciales más conocidos es Specter:
 
-![img](specter.png)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Trabajos/Fotos/specter.jpeg)
 
 Es capaz de simular hasta 14 sistemas operativos diferentes, y funciona bajo Windows. Su principal atractivo es su facilidad de uso.
 
@@ -113,5 +113,5 @@ En el mundo del código abierto, se pueden encontrar muchos ejemplos de Honeypot
 
 Bubblegum Proxypot, Jackpot, BackOfficer Friendly, Bigeye. HoneyWeb, Deception Toolkit, LaBrea Tarpit, Honeyd, Sendmail SPAM Trap, etc.
 
-![img](tolkit.png)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Trabajos/Fotos/tolkit.png)
 
