@@ -29,19 +29,19 @@ A continuación tenemos que editar el archivo de configuración de nuestro servi
 **sudo nano /etc/apache2/sites-available/default-ssl.conf**
 
 Y añadimos las siguientes líneas:
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen2)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen2.png)
 
 Una vez modificadas estas líneas, hacemos el procedimiento anterior, activamos el sitio y reiniciamos apache.
 
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen3)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen3.png)
 
 Y para comprobar que funciona todo según lo previsto, hacemos peticiones mediante la herramienta curl, y comprobamos también que si no se especifica la opción -k no funciona.
 
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen4)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen4.png)
 
 ## Configuración del cortafuegos ##
 En primer lugar para ver el estado del cortafuegos ejecutamos: **iptables -L -n -v**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen5)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen5.png)
 Podemos ver como se acepta todo tipo de tráfico,tanto de entrada como de salida, debido a que todavía no hemos aplicado ninguna regla.
 
 ### IPTABLES ###
@@ -56,37 +56,37 @@ Para bloquear el tráfico de entrada, podemos hacer:
 **iptables -P OUTPUT ACCEPT**
 **iptables -A INPUT -m state --state NEW,ESTABLISHED -j ACCEPT**
 **iptables –L –n -v**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen6)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen6.png)
 
 Si queremos bloquear trafico ICMP para evitar ataques mediante ping:
 **iptables -A INPUT -p icmp --icmp-type echo-request -j DROP**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen7)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen7.png)
 
 Si queremos permitir el acceso por SSH, abriendo el puerto 22:
 **iptables -A INPUT -p tcp --dport 22 -j ACCEPT**
 **iptables -A OUTPUT -p udp --sport22 -j ACCEPT**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen8)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen8.png)
 
 Si queremos permitir el acceso a DNS, abriendo el puerto 53:
 **iptables -A INPUT -m state --state NEW -p udp --dport 53 -j ACCEPT**
 **iptables -A INPUT -m state --state NEW -p tcp --dport 53 -j ACCEPT**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen9)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen9.png)
 
 Si queremos bloquear todo el tráfico de entrada o salida desde una IP:
 **iptables -I INPUT -s 192.168.1.50 -j DROP**
 **iptables -I OUTPUT -s 192.168.1.50 -j DROP**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen10)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen10.png)
 
 Ahora procedemos a comprobar el funcionamiento del cortafuegos ejecutando la siguiente orden:
 **netstat -tulpn**
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen11)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen11.png)
 
 ## SCRIPT ##
 Script que realizaría lo pedido en la práctica, más otras funcionalidades.
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen12)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen12.png)
 
 Para que se ejecute con el arranque de la máquina, nada más bastaría añadir lo siguiente en el crontab
-![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen13)
+![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen13.png)
 
 
 
