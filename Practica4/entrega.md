@@ -70,6 +70,7 @@ Para bloquear el tráfico de entrada, podemos hacer:
 ![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen6.png)
 
 Si queremos bloquear trafico ICMP para evitar ataques mediante ping:
+
 **iptables -A INPUT -p icmp --icmp-type echo-request -j DROP**
 
 ![img](https://github.com/SergioCruzPerez/SWAP-UGR/blob/master/Practica4/fotos/imagen7.png)
