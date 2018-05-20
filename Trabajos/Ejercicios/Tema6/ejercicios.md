@@ -1,4 +1,4 @@
-##Ejercicio T6.1##
+## Ejercicio T6.1 ##
 Aplicar con iptables una política de denegar todo el tráfico
 en una de las máquinas de prácticas.
 Comprobar el funcionamiento.
@@ -10,13 +10,13 @@ iptables -A INPUT -j ACCEPT
 Teniendo en cuenta que cada vez que hagamos un cambio debemos eliminar la tabla creada con la orden: iptables -D INPUT -j DROP
 
  
-##Ejercicio T6.2##
+## Ejercicio T6.2 ##
 Comprobar qué puertos tienen abiertos nuestras máquinas,
 su estado, y qué programa o demonio lo ocupa. 
 netstat -tulpn
-(imagen)
 
-##Ejercicio T6.3##
+
+## Ejercicio T6.3 ##
 Buscar información acerca de los tipos de ataques más
 comunes en servidores web (p.ej. secuestros de sesión).
 Detallar en qué consisten, y cómo se pueden evitar. 
