@@ -1,10 +1,10 @@
-##Ejercicio T7.1##
+## Ejercicio T7.1 ##
 ¿Qué tamaño de unidad de unidad RAID se obtendrá al configurar un RAID 0 a partir de dos discos de 100 GB y 100 GB? 200GB sumando ambos discos.
 ¿Qué tamaño de unidad de unidad RAID se obtendrá al
 configurar un RAID 0 a partir de tres discos de 200 GB
 cada uno? 600GB al existir 3 discos.
 
-##Ejercicio T7.2##
+## Ejercicio T7.2 ##
 ¿Qué tamaño de unidad de unidad RAID se obtendrá al
 configurar un RAID 1 a partir de dos discos de 100 GB y
 100 GB? 100GB porque RAID1 solamente duplica los datos, no el espacio.
@@ -12,7 +12,7 @@ configurar un RAID 1 a partir de dos discos de 100 GB y
 configurar un RAID 1 a partir de tres discos de 200 GB
 cada uno? 200GB,mismo caso que apartado anterior.
 
-##Ejercicio T7.4##
+## Ejercicio T7.4 ##
 Buscar información sobre los sistemas de ficheros en red más
 utilizados en la actualidad y comparar sus características. Hacer
 una lista de ventajas e inconvenientes de todos ellos, así como
