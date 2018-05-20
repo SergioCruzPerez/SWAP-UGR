@@ -14,7 +14,7 @@ Teniendo en cuenta que cada vez que hagamos un cambio debemos eliminar la tabla 
 Comprobar qué puertos tienen abiertos nuestras máquinas,
 su estado, y qué programa o demonio lo ocupa. 
 netstat -tulpn
-
+![img](./ejercicio2.png)
 
 ## Ejercicio T6.3 ##
 Buscar información acerca de los tipos de ataques más
