@@ -1,4 +1,4 @@
-##Ejercicio T2.1##
+## Ejercicio T2.1 ##
 disponibilidad_web3=97.75% + (1-97.75%) * 85% = 99.6625%
 disponibilidad_app3=99% + (1-99%) * 90% = 99.9%
 disponibilidad_Database3=99.9999% + (1-99.999%) * 99.9% = 99.9999999%
@@ -8,7 +8,7 @@ disponibilidad_Switch3=99.99% + (1-99.99%) * 99% = 99.9999%
 disponibilidad_DataCenter3=99.99% + (1-99.99%) * 99.99% = 99.99999999%
 disponibilidad_ISP3=99.75% + (1-99.75%) * 95% = 99.9875%
 
-##Ejercicio T2.4##
+## Ejercicio T2.4 ##
 Buscar ejemplos de balanceadores software y hardware
 (productos comerciales).
 -Nginx,haproxy como balanceadores software, empleados en la práctica 3
